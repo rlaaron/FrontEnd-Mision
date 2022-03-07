@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TROSSET</title>   
+</head>
+<body style="background-color:#00fff2;">
+    <div align="center">
+    <img src="./img/troset_wa-removebg-preview.png" alt="logo TROSSET" width="250px" height="250px" aling="center" >
+    </div>
+    <h1 style="text-align:center">PASTELERIA TROSSET </h1>
+
+    <br>
+    <h2>CREA TU PASTEL FAVORITO</h2>
+    <br>
+    <h3>Datos personales</h3>
+    <form action="/pastel.js" id="pastel" method="post">
+        <label for="nombre">Ingrese su nombre</label><br>
+        <input type="text" id="nombre" name="nombre">
+        <br>
+        <label for="direccion">Ingrese su direccion</label><br>
+        <input type="text" id="Input1" name="Input1">
+        <br>
+        <label for="celular">Ingrese su celular</label><br>
+        <input type="tel" id="celular" name="celular" maxlength="10">
+        <br>
+        <label for="email">Ingrese su Correo electronico</label><br>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="fechaEntrega">Ingrese Fecha Entrega</label><br>
+        <input type="date" id="fechaEntrega" name="fechaEntrega">
+    
+        <hr>
+
+        <h3>Datos del pastel</h3>
+        <label for="sabor">Seleccione el sabor de su pan (si quiere varios seleccionelos)</label><br>
+        <input type="checkbox" id="fresa" name="fresa" value="fresa">
+        <label for="fresa">Fresa.............$150</label><br>
+        <input type="checkbox" id="chocolate" name="chocolate" value="chocolate">
+        <label for="chocolate">chocolate......$150</label><br>
+        <input type="checkbox" id="arandano" name="arandano" value="arandano">
+        <label for="arandano">arandano.......$200</label><br>
+        <input type="checkbox" id="moras" name="moras" value="moras">
+        <label for="moras">moras............$200</label><br>
+        <br>
+        <label for="sabor">Seleccione su decoracion (si quiere varias seleccionelas)</label><br>
+        <input type="checkbox" id="Fondant" name="Fondant" value="Fondant">
+        <label for="Fondant">Fondant..............$200</label><br>
+        <input type="checkbox" id="Betum" name="Betum" value="Betum">
+        <label for="Betum">Betum................$100</label><br>
+        <input type="checkbox" id="Chocolate" name="Chocolate" value="Chocolate">
+        <label for="Chocolate">Chocolate..........$100</label><br>
+        <input type="checkbox" id="Crema" name="Crema" value="Crema">
+        <label for="Crema">Crema................$100</label><br>
+        <br>
+        <label for="sabor">Seleccione su adorno (si quiere varios seleccionelos)</label><br>
+        <input type="checkbox" id="Chispas de chocolate" name="Chispas de chocolate" value="Chispas de chocolate">
+        <label for="Chispas de chocolate">Chispas de chocolate..............$200</label><br>
+        <input type="checkbox" id="Chispas de colores" name="Chispas de colores" value="Chispas de colores">
+        <label for="Chispas de colores">Chispas de colores..................$100</label><br>
+        <input type="checkbox" id="Salsa de fresa" name="Salsa de fresa" value="Salsa de fresa">
+        <label for="Salsa de fresa">Salsa de fresa..........................$100</label><br>
+        <input type="checkbox" id="Perlas" name="Perlas" value="Perlas">
+        <label for="Perlas">Perlas......................................$100</label><br>
+        <br>
+        <label for="descripcion"> Ingrese una corta descripcion de como busca su pastel</label><br>
+        <input type="text" id="descripcion" name="descripcion">
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+</body>
+</html> 

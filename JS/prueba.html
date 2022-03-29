@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=2">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <link href="http://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+    
+</head>
+<body>
+    <section class="contenedor">
+        <header class="header">
+            <img src="./img/Logo.png" alt="logo pokemon" style="width: 800px;">
+        </header>
+        <main class="card">
+            <h2 class="pok">POKEDEX</h2><br>
+            <br>
+            <label for="pokename" class="labs"> INGRESE NOMBRE O ID DE POKEMON </label>
+            <br>
+            <br>
+            <input type="text" placeholder="pikachu" id="pokeName" name="pokeName" class="ingresar">
+            <button onclick="fetchPokemon()" class="css-button-fully-rounded--sky">BUSCAR</button>
+            <div class="cards">
+                <p class="cards1" id="name"></p><br>
+                <p class="cards1" id="type"></p><br>
+                <p class="cards1" id="hbs"></p><br>
+                <div class="cards1" id="s"></div>
+                <br>
+                <div class="cards3" id="moves"> </div>
+                
+            </div> 
+        </main>
+        <div class="foto1">
+            <img src="./img/picachu corriendo.gif"  alt="picachu corriendo" id="pokeImg" width="500px" >
+        </div>
+        <div class="foto2">
+            <img src="./img/picachu corriendo.gif" alt="picachu corriendo" id="pokeImg2" width="500px">
+        </div>
+        <div class="foto3">
+            <img src="./img/picachu corriendo.gif" alt="picachu corriendo" id="pokeImg3" width="500px">
+        </div>
+        <div class="foto4">
+            <img src="./img/picachu corriendo.gif" alt="picachu corriendo" id="pokeImg4" width="500px">
+        </div>
+        <div class="foto5"></div>
+        <div class="foto6"></div>
+        <footer class="footer">
+            <h3> ©PAGIA DESARROLLADA POR ₳ PARA LAUCNHX</h3>
+        </footer>
+    </section>
+</body>
+<footer>
+    <script src="./index.js"></script>
+</footer>
+</html>

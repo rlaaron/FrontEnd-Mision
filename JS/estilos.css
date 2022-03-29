@@ -1,0 +1,305 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.nombre{
+    display: flex;
+    width: 500px;
+    height: 500px;
+    border: red 2px;
+}
+
+body {
+    background-image: linear-gradient(#00ffff, #0099ff);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.titulo{
+    letter-spacing: 20px;
+    text-align: center;
+    justify-content: center;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-family: 'Pokemon Solid', sans-serif;
+    color: #0375bc;  
+}
+
+.contenedor{
+    
+    max-width: 100%;
+    text-align: center;
+    
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+
+    grid-template-areas:"header header header"
+                        "foto1 card foto2"
+                        "foto3 card foto4"
+                        "foto5 card foto6"
+                        "footer footer footer";
+}
+
+.contenedor >div,
+.contenedor .header,
+.contenedor  .card,
+.contenedor .footer {
+    
+    padding: 40px;
+    border-radius: 4px;
+}
+
+.contenedor .header {
+    grid-column: 1/4;
+    grid-area: header;
+
+}
+
+.contenedor  .card{
+    
+    grid-column: 2/4;
+    
+    min-height: 100px;
+    grid-area: card;
+}
+.contenedor .foto1,
+.contenedor .foto2,
+.contenedor .foto3,
+.contenedor .foto4 {
+    
+    
+    height: 500px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width:auto;
+    display: block;
+}
+.contenedor .foto1 {
+    grid-area: foto1;
+   
+}
+.contenedor .foto2 {
+    grid-area: foto2;
+}
+.contenedor .foto3 {
+    grid-area: foto3;
+    
+}
+.contenedor .foto4 {
+    grid-area: foto4;
+}
+.contenedor .foto5{
+    grid-area: foto5;
+}
+.contenedor .foto{
+    grid-area: foto6;
+}
+
+.contenido .footer {
+    grid-column: 6/-1;
+    height: auto;
+    width:auto;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+    color: #0375bc;
+    grid-area: footer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+
+}
+
+.pok{
+    position: relative;
+    top: 0%;
+    color: black;
+}
+.cards{
+    
+    top: 20%;
+    color: black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width:auto;
+    display: block;
+}
+.cards1{
+    
+    width: 100%;
+    margin-top: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    /*border: 2px  solid #4433ff; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width:auto;
+    display: block;
+}
+
+.cards2{
+    position: absolute;
+    margin-top: 25px;
+    width: 150%;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+   
+    font-size: larger;
+    background-color:#e9e1a8 ;
+    border-color: #e9e1a8;
+    font-family: 'Times New Roman', Times, serif;
+    height: auto;
+    width:auto;
+    display: block;
+}
+
+.cards3{
+    width: 100%;
+    height: 1%;
+    
+    margin-top: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    overflow: auto;
+    height: auto;
+    width:auto;
+    display: block;
+}
+.cards21{
+    height: 500px;
+}
+.css-button-fully-rounded--sky {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid rgb(0, 255, 255);
+    background: rgb(0, 255, 242);
+    height: auto;
+    width:auto;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+    background-image: linear-gradient(#00ffff, #0099ff);
+    
+  }
+  .css-button-fully-rounded--sky:hover {
+    background: #fff;
+    color: rgb(0, 195, 255)
+  }
+
+
+.ingresar{
+    width: 200px;
+    border-radius: 15px;
+    font-size: large;
+    height: 30px;
+    background-color:none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    border: NONE;
+    font-size: larger;
+    text-align: center;
+    opacity: 0.5;
+    height: auto;
+    width:auto;
+    
+    
+
+}
+.labs{
+    color: black;
+
+}
+/*card */
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  --card-height: 65vh;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+
+
+
+.card {
+    background-image: linear-gradient(#00ffff, #0099ff);
+    height: auto;
+    width:auto;
+    display: block;
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+    font-size: 1.5em;
+    color: #fff;
+    
+    grid-area: card;
+}
+
+
+
+
+
+.card::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 15px;
+  background-image: linear-gradient(
+    var(--rotate)
+    , #ff5d5d, #ffcc01 43%, #c27800);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+    grid-area: card;
+}
+
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+@media screen  and (max-width: 800px){
+    .contenedor{
+        grid-template-areas: "header header header"
+                        "card card card"
+                        "card card card"
+                        "foto1 card foto3"
+                        "foto5 foto4 foto6"
+                        "footer footer footer";
+    }
+    
+}
